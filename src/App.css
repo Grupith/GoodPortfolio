@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ccd6f6;
+  --grey: #8892b0;
+}
+
+@font-face {
+  font-family: "CalibreBold", sans-serif;
+  src: url(../src/fonts/CalibreBlack.otf);
+  src: url(../src/fonts/CalibreBlackItalic.otf);
+  src: url(../src/fonts/CalibreBold.otf);
+  src: url(../src/fonts/CalibreBoldItalic.otf);
+  src: url(../src/fonts/CalibreLight.otf);
+  src: url(../src/fonts/CalibreLightItalic.otf);
+  src: url(../src/fonts/CalibreMedium.otf);
+  src: url(../src/fonts/CalibreMediumItalic.otf);
+  src: url(../src/fonts/CalibreRegular.otf);
+  src: url(../src/fonts/CalibreRegularItalic.otf);
+  src: url(../src/fonts/CalibreSemibold.otf);
+  src: url(../src/fonts/CalibreSemiboldItalic.otf);
+  src: url(../src/fonts/CalibreThin.otf);
+  src: url(../src/fonts/CalibreThinItalic.otf);
+}
+
+.App {
+  text-align: center;
+  background-color: #0a192f;
+  height: 100vh;
+  color: var(--white);
+  font-family: "CalibreBold", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1.1rem;
+}
+
+.navbarPages {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbarPages li {
+  margin: 1.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s ease-in-out;
+  color: var(--white);
+}
+
+.navbarPages li:hover {
+  color: var(--grey);
+}
+
+.logo {
+  opacity: 75%;
+  cursor: pointer;
+  transition: transform 0.7s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(180deg);
+}
+
+.Home {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 15rem;
+}
+
+.Home h2 {
+  font-size: 3.5rem;
+}
+
+.Home h3 {
+  font-size: 3.5rem;
+  color: var(--grey);
+}
+
+.nameJob {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-family: "CalibreRegular", sans-serif;
+  color: var(--grey);
+}
